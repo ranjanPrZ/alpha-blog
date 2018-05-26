@@ -1,5 +1,7 @@
 <h2>List of data </h2>
-<% @article.each do |a| %>
-  <p>Title: <%= a.title %></p>
-  <p>Description: <%= a.description%></p><br />
-<% end %>
+
+  <p>Title: <%= @article.title %></p>
+  <p>Description: <%= @article.description%></p><br />
+
+<%= link_to "Edit", edit_article_path(@article) %> | 
+<%= link_to "Home", articles_path %>
